@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akdas Ahmad | Portfolio</title>
+    <meta name="description" content="Personal portfolio of Md Akdas Ahmad, Software Development Engineer." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page" id="page-root">
+      <button class="theme-toggle theme-toggle-floating" id="theme-toggle" type="button" aria-label="Switch to black theme">🌙</button>
+      <header class="hero" id="hero" tabindex="-1">
+        <h1>Hi, I'm Akdas Ahmad</h1>
+        <p class="hero-line" id="hero-line" data-full-text="Software engineer building high-reliability backend systems for finance and distributed platforms.">
+          Software engineer building high-reliability backend systems for finance and distributed platforms.
+        </p>
+        <p class="cred-line">
+          SDE II @ Kotak Mahindra Bank<br />
+          Working on treasury &amp; forex platforms
+        </p>
+        <p class="hero-summary description">
+          I currently work as an SDE II at Kotak Mahindra Bank, building treasury and forex systems for pricing, compliance, and
+          trade workflows. Before that, I built internal delivery tools at Amazon and worked on low-level validation tooling during
+          my Samsung internship. My focus is clean APIs, useful logs, strong deployment hygiene, and systems that stay stable under
+          pressure.
+        </p>
+        <p class="signal-line">I design systems that handle scale, latency, and real-world financial constraints.</p>
+      </header>
+
+      <nav class="tab-nav" aria-label="Portfolio sections">
+        <div class="tab-links" role="tablist" aria-label="Section tabs">
+          <button class="tab-link" data-tab="hero" aria-selected="false" role="tab">About</button>
+          <button class="tab-link" data-tab="experience" aria-selected="false" role="tab">Experience</button>
+          <button class="tab-link" data-tab="projects" aria-selected="false" role="tab">Projects</button>
+          <button class="tab-link" data-tab="education" aria-selected="false" role="tab">Education</button>
+          <button class="tab-link" data-tab="hobbies" aria-selected="false" role="tab">Hobbies</button>
+          <a
+            class="resume-btn"
+            href="file:///Users/akdas/Desktop/Akdas_YOE_3_SDE_2.pdf"
+            download="Akdas_Ahmad_Resume.pdf"
+            aria-label="Download resume"
+            >Resume</a
+          >
+          <button class="tab-link" data-tab="contact" aria-selected="false" role="tab">Contact</button>
+        </div>
+      </nav>
+
+      <section class="tab-panel" id="experience" tabindex="-1" role="tabpanel">
+        <header class="section-header">
+          <h2 class="section-title">Experience</h2>
+        </header>
+        <article class="entry">
+          <div class="entry-head">
+            <h2>Kotak Mahindra Bank</h2>
+            <p>Apr 2025 - Present | Gurgaon</p>
+          </div>
+          <p class="role">Software Development Engineer II · KDAC Treasury</p>
+          <ul>
+            <li>Built a config service using caching and Redis write-behind to reduce latency and improve consistency.</li>
+            <li>Implemented correlation-id logging across microservices to speed up incident debugging.</li>
+            <li>Built RBI-compliant pricing workflows for remittance and travel card products.</li>
+            <li class="stack">Java, Spring Boot, PostgreSQL, Redis, Kafka, Docker, Azure DevOps, Django</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h2>Kotak Mahindra Bank</h2>
+            <p>Jul 2023 - Mar 2025 | Gurgaon</p>
+          </div>
+          <p class="role">Software Development Engineer I · KDAC Treasury</p>
+          <ul>
+            <li>Shipped regulatory reporting workflows and reduced manual RBI submission effort by 40%.</li>
+            <li>Built core modules and integrations for the in-house KDAC treasury platform.</li>
+            <li>Integrated core banking APIs and upstream systems for trade metrics and limits calculation.</li>
+            <li>Owned deployments across DEV, UAT and PROD pipelines.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h2>Amazon</h2>
+            <p>Jul 2022 - Apr 2023 | Gurgaon</p>
+          </div>
+          <p class="role">Software Development Engineer I · Last Mile Delivery Tech</p>
+          <ul>
+            <li>Built package unassignment and status override capabilities in Mission Control.</li>
+            <li>Integrated features in React + TypeScript workflows for delivery station operations.</li>
+            <li>Reduced Lambda cold starts by ~50% with Provisioned Concurrency.</li>
+            <li>Handled high-severity incidents as part of on-call.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h2>Samsung</h2>
+            <p>Feb 2022 - Jun 2022 | Noida</p>
+          </div>
+          <p class="role">Software Development Engineer Intern</p>
+          <ul>
+            <li>Worked on vibration and USB module validation.</li>
+            <li>Ran sanity and stability testing on updated binaries for mobile and tablet devices.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="tab-panel" id="projects" tabindex="-1" role="tabpanel">
+        <header class="section-header">
+          <h2 class="section-title">Projects</h2>
+        </header>
+        <article class="entry">
+          <h2>KDAC Treasury Platform</h2>
+          <p>
+            End-to-end treasury workflow platform for forex and compliance operations. Designed and shipped reporting, policy,
+            integration, and deployment paths.
+          </p>
+        </article>
+        <article class="entry">
+          <h2>Config Service for Forex Products</h2>
+          <p>
+            Low-latency configuration service with Redis write-behind and cache-first reads for consistent runtime behavior in
+            pricing systems.
+          </p>
+        </article>
+        <article class="entry">
+          <h2>Stock Platform (Personal)</h2>
+          <p>
+            Kafka-based learning project for market-data ingestion and price processing with microservices and event streaming.
+          </p>
+        </article>
+      </section>
+
+      <section class="tab-panel" id="education" tabindex="-1" role="tabpanel">
+        <header class="section-header">
+          <h2 class="section-title">Education</h2>
+        </header>
+        <article class="entry">
+          <div class="entry-head">
+            <h2>Jamia Millia Islamia</h2>
+            <p>2018 - 2022 | New Delhi</p>
+          </div>
+          <p class="role">B.Tech in Computer Science and Engineering</p>
+          <p>CGPA: 8.95</p>
+        </article>
+        <article class="entry">
+          <h2>Highlights</h2>
+          <ul>
+            <li>Kotak Quarterly Award</li>
+            <li>Certificate of Recognition (Kotak)</li>
+            <li>CodeChef 4-star (max 1855)</li>
+            <li>Google Hash Code 2020</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="tab-panel" id="hobbies" tabindex="-1" role="tabpanel">
+        <header class="section-header">
+          <h2 class="section-title">Hobbies</h2>
+        </header>
+        <article class="entry">
+          <h2>Beyond Work</h2>
+          <ul>
+            <li>Problem solving and competitive programming.</li>
+            <li>Reading about distributed systems and backend architecture.</li>
+            <li>Building side projects to test ideas quickly.</li>
+            <li>Writing notes after debugging difficult production issues.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="tab-panel" id="contact" tabindex="-1" role="tabpanel">
+        <header class="section-header">
+          <h2 class="section-title">Contact</h2>
+        </header>
+        <article class="entry">
+          <h2>Let's connect</h2>
+          <ul class="contact-list">
+            <li><a href="mailto:ahmadakdas2020@gmail.com">ahmadakdas2020@gmail.com</a></li>
+            <li><a href="tel:+918626781824">+91 8626781824</a></li>
+            <li><a href="https://www.linkedin.com/in/md-akdas-ahmad" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <script src="./tabs.js"></script>
+  </body>
+</html>
